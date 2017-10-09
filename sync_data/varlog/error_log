@@ -1,0 +1,11 @@
+[Mon Oct 09 07:23:55 2017] [warn] Init: Session Cache is not configured [hint: SSLSessionCache]
+httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2 for ServerName
+[Mon Oct 09 07:23:55 2017] [notice] Digest: generating secret for digest authentication ...
+[Mon Oct 09 07:23:55 2017] [notice] Digest: done
+[Mon Oct 09 07:23:56 2017] [notice] Apache/2.2.34 (Unix) mod_ssl/2.2.34 OpenSSL/1.0.1t DAV/2 configured -- resuming normal operations
+[Mon Oct 09 07:24:04 2017] [notice] caught SIGTERM, shutting down
+[Mon Oct 09 07:24:06 2017] [warn] Init: Session Cache is not configured [hint: SSLSessionCache]
+httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2 for ServerName
+[Mon Oct 09 07:24:06 2017] [notice] Digest: generating secret for digest authentication ...
+[Mon Oct 09 07:24:06 2017] [notice] Digest: done
+[Mon Oct 09 07:24:07 2017] [notice] Apache/2.2.34 (Unix) mod_ssl/2.2.34 OpenSSL/1.0.1t DAV/2 configured -- resuming normal operations
