@@ -1,10 +1,19 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+# TODO: set environment variable export DOCKER_HOST=tcp://127.0.0.1:2375 before use
+
 # set for using vagrant without --provider=docker
 ENV["VAGRANT_DEFAULT_PROVIDER"] ||= "docker"
 
 Vagrant.configure("2") do |config|
+
+  if Vagrant.has_plugin?("vagrant-proxyconf")
+    config.proxy.http     = "http://{proxy_ip}:{proxy_port}"
+    config.proxy.https    = "http://{proxy_ip}:{proxy_port}"
+    config.proxy.no_proxy = "localhost,127.0.0.1"
+  end
+
   # host <=> vagrant
   config.vm.network "private_network", ip: "192.168.50.5"
     config.vm.provider "docker" do |d|
