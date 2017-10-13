@@ -15,17 +15,17 @@ Vagrant.configure("2") do |config|
   end
 
   # host <=> vagrant
-  config.vm.network "private_network", ip: "192.168.50.5"
-    config.vm.provider "docker" do |d|
-      d.build_dir="."
-      d.vagrant_vagrantfile = "ubuntu-vagrant/Vagrantfile"
-      d.vagrant_machine = "ubuntu-vagrant"
-      # hyperviser -> docker
-      d.ports = ['8080:80']
-      d.remains_running = true
-      d.volumes=["/vagrant-apachelog:/usr/local/apache2/logs", 
-                 "/vagrant-varlog:/var/log",
-                 "/vagrant-htdocs:/usr/local/apache2/htdocs",
-                ]
+  config.vm.provider "docker" do |d|
+    d.force_host_vm = true
+    d.build_dir="."
+    d.vagrant_vagrantfile = "ubuntu-vagrant/Vagrantfile"
+    d.vagrant_machine = "ubuntu-vagrant"
+    # hyperviser -> docker
+    d.ports = ['8080:80']
+    d.remains_running = true
+    d.volumes=["/vagrant-apachelog:/usr/local/apache2/logs", 
+                "/vagrant-varlog:/var/log",
+                "/vagrant-htdocs:/usr/local/apache2/htdocs",
+              ]
    end  
 end

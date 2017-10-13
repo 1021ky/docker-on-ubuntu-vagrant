@@ -9,3 +9,10 @@ httpd: Could not reliably determine the server's fully qualified domain name, us
 [Mon Oct 09 07:24:06 2017] [notice] Digest: generating secret for digest authentication ...
 [Mon Oct 09 07:24:06 2017] [notice] Digest: done
 [Mon Oct 09 07:24:07 2017] [notice] Apache/2.2.34 (Unix) mod_ssl/2.2.34 OpenSSL/1.0.1t DAV/2 configured -- resuming normal operations
+[Fri Oct 13 12:33:59 2017] [warn] Init: Session Cache is not configured [hint: SSLSessionCache]
+httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2 for ServerName
+[Fri Oct 13 12:33:59 2017] [notice] Digest: generating secret for digest authentication ...
+[Fri Oct 13 12:33:59 2017] [notice] Digest: done
+[Fri Oct 13 12:34:00 2017] [notice] Apache/2.2.34 (Unix) mod_ssl/2.2.34 OpenSSL/1.0.1t DAV/2 configured -- resuming normal operations
+[Fri Oct 13 12:36:51 2017] [error] [client 10.0.2.2] File does not exist: /usr/local/apache2/htdocs/favicon.ico
+[Fri Oct 13 12:38:17 2017] [notice] caught SIGTERM, shutting down
