@@ -3,7 +3,7 @@ run docker with vagrant provider through remote docker host on ubuntu
 
 ## prerequirement
 install the following tools
-- vagrant (>=1.6)
+- vagrant (>=2.0)
 - virtualbox
 - powershell(>=3.0 on only windows)
 
