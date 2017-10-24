@@ -4,10 +4,6 @@
 # set for using vagrant without --provider=docker
 ENV["VAGRANT_DEFAULT_PROVIDER"] ||= "docker"
 
-# set to force run on any platforms
-ENV["VAGRANT_DETECTED_OS"] = "linux"
-ENV["OSTYPE"] = "linux"
-RbConfig::CONFIG["host_os"] = "linux"
 Vagrant.configure("2") do |config|
 
   if Vagrant.has_plugin?("vagrant-proxyconf")
